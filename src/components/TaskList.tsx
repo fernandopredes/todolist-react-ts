@@ -1,12 +1,18 @@
-import React from 'react'
+import {ITask} from "../interfaces/Task"
+import styles from "./TaskList.module.css";
 
-type Props = {}
 
-const TaskList = (props: Props) => {
+type Props = {
+  taskList: ITask[]
+}
+
+const TaskList = ({taskList}: Props) => {
   return (
-    <div>
-      <p>Lista Tarefa</p>
-    </div>
+   <>
+    {taskList.length > 0 ? (taskList.map((task => (<div key={task.id}>{task.title} {task.difficulty} </div>))))
+    :
+    (<p>Não há tarefas</p>)}
+   </>
   )
 }
 
