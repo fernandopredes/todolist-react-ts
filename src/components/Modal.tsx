@@ -1,4 +1,4 @@
-import React, { Children } from 'react'
+
 import styles from "./Modal.module.css";
 
 interface Props {
