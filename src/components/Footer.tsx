@@ -5,7 +5,7 @@ const Footer = () => {
   return (
       <footer className={styles.footer}>
 
-          <span>to-do list @2022</span>
+          <span>To-do list 2022</span>
 
       </footer>
   )
